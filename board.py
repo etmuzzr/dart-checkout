@@ -21,3 +21,6 @@ board = {
     "T2":6, "D2":4, "2":2,
     "T1":3, "D1":2, "1":1,
 }
+
+#Sort the board by value (descending)
+board = {k: v for k, v in sorted(board.items(), key=lambda seg: seg[1], reverse=True)}
